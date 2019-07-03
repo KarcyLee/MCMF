@@ -50,7 +50,17 @@ const int GLP_V_SIZE = sizeof(VertexData);
 class MCMF {
 public:
     MCMF() {
-        G = glp_create_graph(sizeof(VertexData), sizeof(ArcData));
+        G = glp_create_graph(GLP_V_SIZE, GLP_A_SIZE);
+
+        printf("GLP_A_CAP=%d\n", GLP_A_CAP);
+        printf("GLP_A_COST=%d\n", GLP_A_COST);
+        printf("GLP_A_LOW=%d\n", GLP_A_LOW);
+        printf("GLP_A_RC=%d\n", GLP_A_RC);
+        printf("GLP_A_X=%d\n", GLP_A_X);
+        printf("GLP_A_SIZE=%d\n", GLP_A_SIZE);
+        printf("GLP_V_RHS=%d\n", GLP_V_RHS);
+        printf("GLP_V_SIZE=%d\n", GLP_V_SIZE);
+
     }
 
     void addVertices(int verticesNum) {

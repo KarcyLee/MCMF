@@ -6,8 +6,6 @@ set(CMAKE_CXX_STANDARD 11)
 #add_subdirectory(include)
 add_subdirectory(src)
 
-
-
 # set the project name
 PROJECT(MCMF_WORKSPACE)
 
